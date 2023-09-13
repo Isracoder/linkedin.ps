@@ -8,4 +8,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello world it's me from a pull request
+      - run: echo Hello world its me from a pull request
