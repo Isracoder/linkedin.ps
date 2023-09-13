@@ -8,4 +8,16 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello world it's isra from a pull request
+      - run: echo Hello world its me from a pull request
+
+      - name: setup node.js env
+        uses: actions/setup-node@v3.8.1
+        with:
+          node-version: "18.17.1"
+      - run: node --version
+
+      - name: prepare environment
+        run: |
+          npm ci
+      - name: run test
+        run: npm run test
