@@ -9,3 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo Hello world its me from a pull request
+
+      - name: setup node.js env
+        uses: actions/setup-node@v3.8.1
+        with:
+          node-version: "28.x"
+      - run: node --version
